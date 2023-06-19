@@ -1,15 +1,6 @@
-first = int(input("enter number"))
-second = int(input("enter number"))
-third = int(input("enter number"))
-fourth = int(input("enter number"))
-fifth = int(input("enter number"))
-if first > second and first > third and first > fourth and first > fifth:
-    print(first)
-elif second > first and second > third and second > fourth and second > fifth:
-    print(second)
-elif third > second and third > second and third > fourth and third > fifth:
-    print(third)
-elif fourth > second and fourth > third and fourth > first and fourth > fifth:
-    print(fourth)
-else:
-    print(fifth)
+a, b, c, d, e = int(input("enter number")),\
+                int(input("enter number")),\
+                int(input("enter number")),\
+                int(input("enter number")),\
+                int(input("enter number"))
+print('max: ', max(a, b, c, d, e), ' min: ', min(a, b, c, d, e), ' average: ', (a + b + c + d + e / 5))
